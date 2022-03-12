@@ -41,11 +41,11 @@ CREATE TABLE dbo.Orders
 GO 
 
 INSERT INTO dbo.Orders(CustomerId)
-VALUES (2), (4)
+VALUES (2), (4);
 GO
 
 SELECT cst.Name AS Customers
 FROM dbo.Orders AS ord
 RIGHT JOIN dbo.Customers as cst ON cst.Id = ord.CustomerId
-WHERE ord.Id  IS NULL
+WHERE ord.Id  IS NULL;
 GO
