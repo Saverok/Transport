@@ -1,4 +1,17 @@
-﻿USE master;
+﻿Use master;
+GO
+
+IF EXISTS(SELECT * FROM sys.databases WHERE name = 'Shop')
+BEGIN
+	DROP DATABASE Shop
+END;
+GO
+
+CREATE DATABASE Shop;
+GO
+
+USE Shop;
+GO
 
 IF EXISTS
 ( 
